@@ -1,0 +1,20 @@
+{
+    "name": "SpeakFaster",
+    "version": "1.1",
+    "description": "Allows you to change the playback speed for the lectures recording",
+    "manifest_version": 2,
+    "icons": {
+        "128": "faster-icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://eu.bbcollab.com/*", "https://nestor.rug.nl/*.MP4"],
+            "run_at": "document_end",
+            "js": ["change.js"],
+            "css": ["change.css"]
+          }
+    ]
+  }
