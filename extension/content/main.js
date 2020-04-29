@@ -1,6 +1,6 @@
 var injector = new Injector();
 name = "content";
-var start, port, url;
+var start, port, url, positioner;
 
 function shouldStart() {
     url = new URL(location.href);
@@ -17,8 +17,10 @@ function shouldStart() {
 }
 
 
-function onVideoFound(found) {
-
+function onVideoFound(found, gui) {
+    if (!found) return;
+    
+    positioner = new Position(gui);
 }
 
 function initConnection() {

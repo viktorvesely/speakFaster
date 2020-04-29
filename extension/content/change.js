@@ -38,7 +38,7 @@ class Injector {
         this.video = this.getVideo();
         if (!this.video) {
             if (this.tries == g_maxTries) {
-                this.onVideoFound(false);
+                this.onVideoFound(false, null);
                 window.clearInterval(this.interval);
             }
             return;
@@ -84,7 +84,7 @@ class Injector {
         slider.oninput = e => {
             this.updateText(e.target.value);
         }
-        this.onVideoFound(true);
+        this.onVideoFound(true, this.html);
     }
 
     changePlayback(speed) {
