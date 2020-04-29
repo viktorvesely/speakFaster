@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 15px;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+        .item {
+            display: inline-block;
+            
+        }
+        .tickText {
+            font-size: 18px;
+            width: 200px;
+            line-height: 17px;
+        }
+        .supportText {
+            font-size: 18px;
+            width: 200px;
+            line-height: 18px;
+        }
+        .tick {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: black;
+            -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.22);
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.22);
+            margin-bottom: 5px;
+        }
+        .tick::after {
+            content: "";
+            width: 35px;
+            height: 35px;
+            position: relative;
+            background-color: white;
+        }
+        .row {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .injectButton {
+            background: transparent;
+            border: 2px solid black;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: backgroundColor 0.4s;
+            width: 211px;
+            height: 42px;
+        }
+        .injectButton:hover {
+            cursor: pointer;
+            background-color: rgb(248, 248, 248);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="status row">
+        <span class="tick item">
+        </span>
+        <span class="item tickText">Unknown status</span> 
+    </div>
+    <hr>
+    <div class="inject row">
+        <span class="item injectButton">Inject anyways?</span>
+    </div>
+    <hr>
+    <div class="row">
+        <style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{ padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:45px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#000000 !important;border-radius: 0 !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 18px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Arial', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/weseliv"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:19px !important;">Buy me a coffee</span></a>
+    </div>
+    <hr>
+    <div class="report row">
+
+    </div>
+    <script src="/shared/msg.js"></script>
+    <script src="/popup/main.js"></script>
+</body>
+</html>
