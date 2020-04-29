@@ -1,7 +1,7 @@
 {
-    "name": "SpeakFaster",
-    "version": "1.2",
-    "description": "Allows you to change the playback speed for the lectures recording",
+    "name": "Speak Faster",
+    "version": "1.3",
+    "description": "Allows you to change the playback speed of video players. Great for listening to lectures and skipping ads!",
     "manifest_version": 2,
     "icons": {
         "128": "/assets/faster-icon.png"

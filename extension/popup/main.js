@@ -4,6 +4,12 @@ tick = document.querySelector(".tick");
 tickText = document.querySelector(".tickText");
 injectButton = document.querySelector(".injectButton");
 
+git = document.getElementById("git-b");
+fb = document.getElementById("fb-b");
+
+git.onclick = () => { window.open("https://github.com/viktorvesely/speakFaster") };
+fb.onclick = () => { window.open("https://www.facebook.com/weselivv") };
+
 function injectStatus() {
     tick.style.backgroundColor = "#e26fdd";
     tickText.innerText = "Widget injected!";

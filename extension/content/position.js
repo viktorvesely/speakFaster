@@ -10,7 +10,7 @@ class Position {
 
         let ctx = this;
         this.e.onmousedown = e => { this.start.call(ctx, e) };
-        this.e.onmousemove = e => { this.drag.call(ctx, e) };
+        window.addEventListener("mousemove", e => { this.drag.call(ctx, e) });
         this.e.onmouseup = e => { this.stop.call(ctx, e) };
         this.dragging = false;
     }
@@ -58,13 +58,13 @@ class Position {
 
     updatePosition(x, y) {
         this.e.style.top = `${y - 35}px`;
-        this.e.style.left =  `${x - 5}px`;
+        this.e.style.left =  `${x - 10}px`;
     }
 
     getPosition() {
         let rect = this.e.getBoundingClientRect();
         return {
-            x: rect.x + 5,
+            x: rect.x + 10,
             y: rect.y + 35
         };
     }
